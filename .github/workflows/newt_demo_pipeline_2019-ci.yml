@@ -1,0 +1,16 @@
+name: Newt_demo_pipeline_2019/Newt_demo_pipeline_2019-CI
+on:
+  workflow_dispatch:
+env:
+  system_debug: 'false'
+jobs:
+  Job_1:
+    name: Agent job 1
+    runs-on:
+      - self-hosted
+      - Satya_pool
+    steps:
+    - name: checkout
+      uses: actions/checkout@v4.1.0
+    - name: Command Line Script
+      run: echo hello
