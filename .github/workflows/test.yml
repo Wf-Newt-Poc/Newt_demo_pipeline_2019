@@ -1,0 +1,17 @@
+name: Newt_demo_pipeline_2019/test
+on:
+  push:
+    branches:
+    - "*"
+env:
+  system_debug: 'false'
+jobs:
+  build:
+    runs-on:
+      - self-hosted
+      - Satya_pool
+    steps:
+    - name: checkout
+      uses: actions/checkout@v4.1.0
+    - name: Command Line Script
+      run: echo hello
