@@ -8,8 +8,6 @@ env:
 jobs:
   build:
     runs-on: ubuntu-latest
-      - self-hosted
-      - Satya_pool
     steps:
     - name: checkout
       uses: actions/checkout@v4.1.0
