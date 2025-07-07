@@ -7,8 +7,6 @@ jobs:
   Job_1:
     name: Agent job 1
     runs-on: ubuntu-latest
-      - self-hosted
-      - Satya_pool
     steps:
     - name: checkout
       uses: actions/checkout@v4.1.0
